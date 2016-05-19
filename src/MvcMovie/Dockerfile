@@ -5,7 +5,7 @@ ENV https_proxy "http://169.254.237.75:3128"
 
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN ["dotnet", "restore"]
 
 EXPOSE 5004
-ENTRYPOINT ["dnx", "-p", "project.json", "web"]
+ENTRYPOINT ["dotnet", "run"]
