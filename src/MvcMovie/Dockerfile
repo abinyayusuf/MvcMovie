@@ -7,5 +7,9 @@ COPY . /app
 WORKDIR /app
 RUN ["dotnet", "restore"]
 
+<<<<<<< HEAD
 EXPOSE 5000
+=======
+EXPOSE 5004
+>>>>>>> 02f986a94da47abc307d014b9e7e7073e00a21c6
 ENTRYPOINT ["dotnet", "run"]
